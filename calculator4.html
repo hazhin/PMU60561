@@ -1,0 +1,57 @@
+<html>
+   <head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="d.css">
+   <script src="calc.js"></script>
+   </head>
+   <body>
+   <div class="container" align="center">
+   <p id="out"></p>
+      <form name="calculator">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" class="form-control" id="display">
+               </td>
+            </tr>
+			 <tr>
+				<td><input type="button" class="btn btn-secondary" value="MR" onclick="MR()"></td>
+				<td><input type="button" class="btn btn-secondary" value="MS" onclick="MS()"></td>
+				<td><input type="button" class="btn btn-secondary" value="M+" onclick="Mplus()"></td>
+				<td><input type="button" class="btn btn-secondary" value="M-" onclick="Mminus()"></td>
+            </tr>
+            <tr>
+				<td><input type="button" class="btn btn-danger" value="C" onclick="chistka()"></td>
+				<td><input type="button" class="btn btn-danger" value="MC" onclick="Mchistka()"></td>
+				<td><input type="button" class="btn btn-dark" value="←" onclick="Sterka()"></td>
+				<td><input type="button" class="btn btn-dark" value="÷" onclick="deli()"></td>
+            </tr>
+            <tr>
+               <td><input type="button" class="btn btn-light" value="7" onclick="addchislo(7)"></td>
+               <td><input type="button" class="btn btn-light" value="8" onclick="addchislo(8)"></td>
+               <td><input type="button" class="btn btn-light" value="9" onclick="addchislo(9)"></td>
+               <td><input type="button" class="btn btn-dark" value="x" onclick="umnozh()"></td>
+            </tr>
+            <tr>
+			<td><input type="button" class="btn btn-light" value="4" onclick="addchislo(4)"></td>
+               <td><input type="button" class="btn btn-light" value="5" onclick="addchislo(5)"></td>
+               <td><input type="button" class="btn btn-light" value="6" onclick="addchislo(6)"></td>
+			   <td><input type="button" class="btn btn-dark" value="-" onclick="minus()"></td>
+            </tr>
+            <tr>
+			<td><input type="button" class="btn btn-light" value="1" onclick="addchislo(1)"></td>
+               <td><input type="button" class="btn btn-light" value="2" onclick="addchislo(2)"></td>
+               <td><input type="button" class="btn btn-light" value="3" onclick="addchislo(3)"></td>
+               <td><input type="button" class="btn btn-dark" value="+" onclick="plus()"></td>
+            </tr>
+			<tr>
+				<td><input type="button" class="btn btn-light" value="0" onclick="calculator.display.value += '0'"></td>
+				<td><input type="button" class="btn btn-light" value="000" onclick="calculator.display.value += '000'"></td>
+				<td><input type="button" class="btn btn-light" value="." onclick="calculator.display.value += '.'"></td>
+				<td><input type="button" class="btn btn-dark" value="=" onclick="ravno()"></td>
+			</tr>
+         </table>
+      </form>
+	</div>
+   </body>
+</html>

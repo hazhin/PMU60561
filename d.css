@@ -1,0 +1,24 @@
+ html {
+      font-size: 130%;
+    }
+body {
+	position: absolute;
+	top: 10%;
+	left: 38%;
+	}
+.btn {
+	width: 65px;
+	height: 65px;
+	margin: 2px;
+	}
+#out {
+	text-align: right;
+	}
+	
+#display {
+	text-align: right;
+	}
+
+.btn-light {
+	background-color: #DADADA;
+	}
